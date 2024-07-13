@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="form" action="/generate" method="post">
+            <label for="urlInput">Enter Your URL</label>
+            <input id="urlInput" type="url" name="url" required>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+        <div class="imageContainer">
+            <img id="qrImage" src="">
+            <a href="./index.html" style="display: none;" id="btn"><button class="btn">Generate next QR Image</button></a>
+        </div>
+    </div>
+    <script src="./myIndex.js"></script>
+</body>
+</html>
